@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilisim Shop-Tablet</title>
+</head>
+
+<body>
+    <main>
+        <!--sitenin headeri yapildi-->
+        <header>
+            <h1>Bilisim Shop</h1>
+            <h2>Everything what you need</h2>
+            <a href="http://127.0.0.1:5500/Home.html">
+                <button type="button">Home</button>
+            </a>
+            <br>
+            <br>
+            <!--Nav da 3 tane linkli etiket eklendi. linklere live server da görünen adres verildi  -->
+            <nav>
+                <!--Resimli linkler table ile yapildi-->
+                <table border="2" id="siteler">
+                    <caption><b>Ürün seciniz</b></caption>
+                    <tr>
+                        <td> <a href="http://127.0.0.1:5500/products_a.html">
+                                <img border="1" src="laptop1.png" alt="product_a" class="kutu1">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://127.0.0.1:5500/products_b.html" class="kutu1">
+                                <img border="1" src="tel1.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://127.0.0.1:5500/products_c.html" class="kutu1">
+                                <img border="1" src="tablet1.png">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section>
+            <!--sectioni article ile yanyana koymak icin float kullanmak zorunda kaldim-->
+            <fieldset style="float:left;" class="kutu2">
+                <!--ürünün farkli resimlerini icerir -->
+                <fieldset>
+                    <img src="tablet2.png" alt="tablet" class="kutu3">
+                    <br>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <img src="tablet3.png" alt="tablet" class="kutu3">
+                </fieldset>
+            </fieldset>
+        </section>
+
+        <article style="margin-left: 300px; " id="detaylar">
+            <h3>Tablet</h3>
+            <P>Bugüne özel sadece <b style="color: red;">CHF 800.-</b></P>
+            <br>
+            <br>
+            <p>Ürünün özellikleri</p>
+            <ul>
+                <li><b>Ekran Boyutu:</b> 10.2 inc</li>
+                <li><b>Isletim Sistemi:</b> iPadOS 14</li>
+                <li><b>Depolama:</b> 32 GB</li>
+                <li><b>Kamera:</b> 8 MP</li>
+            </ul>
+        </article>
+    </main>
+</body>
+
+</html>
