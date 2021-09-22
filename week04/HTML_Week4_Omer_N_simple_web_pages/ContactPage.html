@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Omer-N-Week4-Homework-Contactpage" />
+    <meta name="description" content="Bu site ödev amacli olusturulmustur" />
+    <meta name="keywords" content="html, contactpage, hicoders" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="30 days" />
+    <meta name="author" content="Omer N" />
+    <title>Omer_N_Week4_Homework_Contactpage</title>
+</head>
+
+<body>
+    <!--sitenin ana kismi header, main ve footer olmak uzere 3 parcadan olusmaktadir-->
+    <header id="navlink">
+        <img src="logo.png" alt="logo" />
+        <nav style="float: right">
+            <a href="./HomePage.html">Home</a>
+            <a href="./ContactPage.html">Contact</a>
+        </nav>
+    </header>
+    <hr />
+
+    <main>
+        <!--form kismi table ve fieldset etiketleri ile olusturuldu-->
+        <table id="info" align="center">
+            <tr>
+                <td>
+                    <!--formun cercevesini görunmez yaptim. arka plani gri olarak olusturdum-->
+                    <fieldset style="width: 800px; border: none">
+                        <!--giris tanitim yazisi-->
+                        <header id="introduction" align="center" style="background-color: rgb(233, 227, 227)">
+                            <table class="box1" align="center">
+                                <tr>
+                                    <th align="left" style="font-size: large">
+                                        The HiCoders welcomes you!
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p id="text" align="left">
+                                            We are experieneced software engineers. We voluntarily
+                                            help people who are interested <br />
+                                            in IT and run various courses for this purpose. if you
+                                            are interested in our course, do <br />
+                                            not hesitate to contact us!
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </header>
+
+                        <section style="background-color: rgb(233, 227, 227)">
+                            <table class="box1" align="center">
+                                <tr>
+                                    <td>
+                                        <fieldset class="frame" style="width: 540px">
+                                            <legend>Personel Information</legend>
+                                            <section>
+                                                <!--formun kisisel bilgiler blogu-->
+                                                <form class="box2" action="#">
+                                                    <label for="fname">Firstname</label><br />
+                                                    <input id="fname" name="firstname:" required
+                                                        placeholder="Please enter your firstname!" /><br />
+
+                                                    <label for="lname">Lastname</label><br />
+                                                    <input id="lname" name="Lastname:" required
+                                                        placeholder="Please enter your lastname!" /><br />
+
+                                                    <!--required ile bilgi girilmesini mecbur tuttum -->
+                                                    <label for="mail">Email</label><br />
+                                                    <input id="mail" name="Email" required
+                                                        placeholder="Please enter your email!" /><br />
+
+                                                    <label>Gender</label><br />
+                                                    <input id="fml" type="radio" name="Gender" value="Female"
+                                                        required />
+                                                    <label for="fml">Female</label><br />
+
+                                                    <input id="ml" type="radio" name="Gender" value="male" required />
+                                                    <label for="ml">Male</label><br />
+
+                                                    <label for="num">Phone</label><br />
+                                                    <!--sadece rakam girilmesi icin pattern kullandim-->
+                                                    <input type="text" name="Phone number:" id="num" pattern="\d*"
+                                                        title="Please enter your phone no!"
+                                                        placeholder="Please enter your phone no!" required /><br />
+
+                                                    <label for="grad">Graduation</label><br />
+                                                    <select name="Graduation:" id="grad">
+                                                        <option value="PHD">PHD.</option>
+                                                        <option value="Master">Master</option>
+                                                        <option value="Bachelor">Bachelor</option>
+                                                        <option value="Association">Association</option>
+                                                    </select>
+                                                    <br />
+                                                    <label for="course">What do you expect from this
+                                                        course?</label><br />
+                                                    <textarea name="Expectation:" id="course" cols="60"
+                                                        rows="5"></textarea><br />
+                                                    <label for="program">Why do you want to learn
+                                                        programming?</label><br />
+                                                    <textarea name="Reason:" id="program" cols="60"
+                                                        rows="5"></textarea><br />
+                                                </form>
+                                            </section>
+                                        </fieldset>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+
+                        <section id="family" style="background-color: rgb(233, 227, 227)">
+                            <table class="box1" align="center">
+                                <tr>
+                                    <td>
+                                        <fieldset class="frame" style="width: 540px">
+                                            <legend>Family Members</legend>
+                                            <section>
+                                                <!--aile bilgileri-->
+                                                <form class="box2" action="#">
+                                                    <label>Are you married?</label><br />
+                                                    <input id="yes" type="radio" name="Marital status:" value="Yes" />
+                                                    <label for="yes">Yes</label><br />
+
+                                                    <input id="no" type="radio" name="Marital status:" value="no" />
+                                                    <label for="no">No</label><br />
+
+                                                    <label for="chld">If you married, how many child do you have?
+                                                    </label>
+                                                    <br />
+                                                    <input type="text" name="Number of children:" id="chld" pattern="\d"
+                                                        title="Enter number of children!"
+                                                        placeholder="Enter number of children!" />
+                                                </form>
+                                            </section>
+                                        </fieldset>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+
+                        <section id="confirm" style="background-color: rgb(233, 227, 227)">
+                            <table class="box1" align="center">
+                                <tr>
+                                    <td>
+                                        <fieldset class="frame" style="width: 540px">
+                                            <legend>Confirmation and Application</legend>
+                                            <section>
+                                                <!--program bilgileri-->
+                                                <form class="box2" action="#">
+                                                    <label>Which ones are you familiar with?</label><br />
+                                                    <input id="html" type="checkbox" name=" Familiar program:"
+                                                        value="Html" />
+                                                    <label for="html">HTML</label><br />
+
+                                                    <input id="css" type="checkbox" name=" Familiar program:"
+                                                        value="Css" />
+                                                    <label for="css">CSS</label><br />
+
+                                                    <input id="bootstrap" type="checkbox" name=" Familiar program:"
+                                                        value="Bootstrap" />
+                                                    <label for="bootstrap">Bootstrap</label><br />
+
+                                                    <input id="java" type="checkbox" name=" Familiar program:"
+                                                        value="JavaScript" />
+                                                    <label for="java">JavaScript</label><br />
+
+                                                    <input id="node" type="checkbox" name=" Familiar program:"
+                                                        value="NodeJS" />
+                                                    <label for="node">NodeJS</label><br />
+
+                                                    <input id="react" type="checkbox" name=" Familiar program:"
+                                                        value="ReactJS" />
+                                                    <label for="react">ReactJS</label><br />
+
+                                                    <label>Add your CV</label><br />
+                                                    <input id="dosya" type="file" /><br />
+
+                                                    <input id="onay" type="checkbox" />
+                                                    <label>Please confirm by ticking the box after reading
+                                                        the
+                                                        <a href="https://hicoders.ch">privacy terms and
+                                                            conditions!</a></label><br />
+
+                                                    <button type="submit">Submit</button>
+                                                </form>
+                                            </section>
+                                        </fieldset>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <footer id="last" style="background-color: rgb(233, 227, 227)">
+        <table align="center">
+            <tr>
+                <td>
+                    <pre class="box3">
+                        <strong>Our Course Phrase</strong>
+
+                        &#9900;Web Fundamentals
+                        &#9900;Web Programming
+                   &#9900;Fullstack Web Programming
+                        &#9900;Capstone Project
+                    </pre>
+                </td>
+
+                <td>
+                    <pre class="box3">
+                        <strong>Contact</strong>
+
+                   &#128231;<a href="mailto:hicoders.ch@gmail.com">info@hicoders.ch</a><!--mail icin link verdim--> 
+                     &#9743;<a href="tel://+41009001010">+41009001010</a><!--telefon numarasi linki verdim-->
+                  &#127973;Schafthauserstrasse 470
+                        8052 Zurich
+                    </pre>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="title" content="Omer-N-Week4-Homework-HomePage" />
+  <meta name="description" content="Bu site ödev amacli olusturulmustur" />
+  <meta name="keywords" content="html, homepage, hicoders" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="30 days" />
+  <meta name="author" content="Omer N" />
+  <title>Omer_N_Week4_Homework_HomePage</title>
+</head>
+<!--Sayfanin ana icerik kismi header, main ve footer olarak 3 ana parca olarak olusturuldu-->
+
+<body>
+  <header id="navlink">
+    <img class="link" src="logo.png" alt="logo" />
+    <nav class="link" style="float: right">
+      <a href="./HomePage.html">Home</a>
+      <a href="./ContactPage.html">Contact</a>
+    </nav>
+  </header>
+  <hr />
+  <!--main kismi header, 2 section ve article den olusmaktadir-->
+
+  <main id="index">
+
+    <header>
+      <h2 align="center">Welcome to HiCoders' Web Programming Course</h2>
+    </header>
+
+    <section>
+      <img src="resim.png" alt="resim" />
+    </section>
+    
+    <!--article kisminda bulunan yazilarin dizilimini yapmak icin table ve fieldset taglari kullanildi-->
+    <article>
+      <table id="content1" align="center" style="background-color: rgb(233, 227, 227)">
+        <tr>
+          <td>
+            <fieldset id="content2" style="border: 0px">
+
+              <fieldset class="box1">
+                <legend><strong>What contains Web Basics</strong></legend>
+                <ul class="list">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Visial Studio Code (IDE)</li>
+                  <li>Semantic Web</li>
+                  <li>Responsive Web Design</li>
+                  <li>Bootstrap CSS Framework</li>
+                  <li>Command Line Interface (CLI)</li>
+                  <li>Git als VCS</li>
+                  <li>GitHub</li>
+                  <li>
+                    IT basis & concepts (computers, networks, operating
+                    systems)
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="box1">
+                <details>
+                  <summary>What contains Web Programming</summary>
+                  <ol class="list">
+                    <li>
+                      Basic programming ( variable, conditions, loops,
+                      functions)
+                    </li>
+                    <li>
+                      Ecma script (objects, arrays, strings, template
+                      literals, dates, functional<br />
+                      programming
+                    </li>
+                    <li>Create algorithms</li>
+                    <li>Creation and use of data models</li>
+                    <li>
+                      Working with modules (separationof responsibilities,
+                      modularization)
+                    </li>
+                    <li>DOM programming (DOM-Api, Bom-Api)</li>
+                    <li>Use of web interfaces in applications</li>
+                    <li>Use of web libraries in applications</li>
+                    <li>How to Use tools to Find Errors (Debug)</li>
+                    <li>Basis of test-driven development</li>
+                  </ol>
+                </details>
+              </fieldset>
+            </fieldset>
+          </td>
+
+          <td>
+            <h3 align="center">
+              Our motto is: share knowledge and promote people!
+            </h3>
+            <br />
+            <h4>Web Basics</h4>
+
+            <p id="text">
+              It is the first module of our course. This course first covers
+              the basics web technologies.The required for <br />
+              programming website are presented.The technologies listed below
+              will be completed in <u> approximately 8 weeks </u> with an <br />intense
+              homework pace. Participants who have completed this course will
+              have gain ed knowledge and experience in <br /> the use of the
+              following tools and technologies and with <mark> this
+              knowledge and experience will be able to create static
+              <br /> websites very easily </mark>
+              <br />
+            </p>
+
+            <h4>Web Programming</h4>
+            <p>
+              In this second course of our module,
+              <strong> basic programming structures in JavaScript </strong> are
+              taught. The tasks dealt with in <br /> this module are well above
+              the basic level, and the submission of these tasks is the most
+              important prerequisite for <br /> completing the
+              course. While the participants prepare these assignments, they
+              need to do research outside of class and, <br /> in particular, have frequent
+              dialogues with their mentors and request their support. although
+              this module is very <br /> challenging module, it is the main
+              module that teaches programming beyond the basics.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </article>
+    <!--iframe ile youtube dan videoyu koyacaktim ama youtube izin vermedi-->
+    <section id="video" align="center">
+      <video width="600" height="400" controls>
+        <source src="./videoplayback.mp4" type="video/mp4" />
+      </video>
+    </section>
+  </main>
+  <hr />
+
+  <footer style="background-color: rgb(233, 227, 227)">
+    <table id="last" align="center">
+      <tr>
+        <td>
+          <pre class="box2">
+                        <strong>Our Course Phrase</strong>
+
+                        &#9900;Web Fundamentals
+                        &#9900;Web Programming
+                   &#9900;Fullstack Web Programming
+                        &#9900;Capstone Project
+                    </pre>
+        </td>
+
+        <td>
+          <pre class="box2">
+                        <strong>Contact</strong>
+
+                   &#128231;<a href="mailto:hicoders.ch@gmail.com">info@hicoders.ch</a><!--mail icin link verdim-->                     
+                     &#9743;<a href="tel://+41009001010">+41009001010</a><!--telefon numarasi linki verdim-->
+                  &#127973;Schafthauserstrasse 470
+                        8052 Zurich
+                    </pre>
+        </td>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>
